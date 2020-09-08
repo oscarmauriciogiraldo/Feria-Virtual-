@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 		<meta charset="utf-8">
 		<style>
 			body {
@@ -28,20 +29,18 @@
 				camera.position.set(0,0,500);
 
 				scene = new THREE.Scene();
-				scene.add(camera);
-				
-				geometry = new THREE.IcosahedronGeometry(200, 1); 
-				material = new THREE.MeshNormalMaterial();
-					
-				material = new THREE.MeshBasicMaterial({
-					color: 0x000000,
-					wireframe: true,
-					wireframeLinewidth: 1});
-				
-				mesh = new THREE.Mesh(geometry, material);
+                scene.add(camera);
+
+                geometry = new THREE.IcosahedronGeometry(200, 1); 
+                material = new THREE.MeshNormalMaterial();
+                
+
+
+
+                mesh = new THREE.Mesh(geometry, material);
 				scene.add(mesh);
 				
-				renderer = new THREE.WebGLRenderer();
+                renderer = new THREE.WebGLRenderer();
 				renderer.setClearColor("skyblue", 1);
 				renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -60,3 +59,4 @@
 		</script>
 	</body>
 </html>
+    
