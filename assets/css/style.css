@@ -4,6 +4,10 @@
     /* colores */
     --gris-header: #C9CFD1;
     --gris-body:#FDFEFE;
+    --blue-button1:#02264D;
+    --blue-button2:#264668;
+    --red-button1:#F91E3E;
+    --red-button2:#9c1428;
     --blue-1:#02121f;
     --blue-2:#144b79;
     --gold-1:#A6856E;
@@ -42,6 +46,7 @@ body {
     background: #fcfcfc;
     /*background: linear-gradient(180deg, #a6abad25, #C9CFD125 100%);*/
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow) var(--color_shadow);
 }
 
 .logo-m-a img{
@@ -68,6 +73,7 @@ body {
     display: inline-block;
     line-height: normal;
     color: #02121f;
+    
     text-decoration: none;
     /*font-weight: 500;*/
     font-family: 'Roboto', sans-serif;
@@ -83,17 +89,41 @@ body {
     border-bottom: 2px solid transparent;
 }
 
+.cta-link {
+    display: inline-block;
+    line-height: normal;
+    color: #fff;
+    background: linear-gradient(180deg, var(--blue-button1) 0%, var(--blue-button2) 100%);
+    text-decoration: none;
+    /*font-weight: 500;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+
+    font-size: 14px;
+
+    
+
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+
 .nav__header .links-menu  {
     /*margin-top: 60px;*/
     display: inline;
     line-height: 50px;
 }
 
-.nav__header .links-menu a{
+.nav__header .links-menu a {
     text-decoration: none;
 }
 
-.nav__header .links-menu a:hover{
+.nav__header .links-menu a.link:hover{
     /*background: #17202A;*/
     color: #F91E3E ;
     
@@ -101,6 +131,13 @@ body {
     border-bottom: 2px solid #F91E3E;
 }
 
+.nav__header .links-menu a.cta-link:hover{
+    /*background: #17202A;*/
+    color: #fff ;
+    background: linear-gradient(180deg, var(--red-button2) 0%, var(--red-button1) 100%);
+    text-decoration: none;
+    
+}
 /*------------------------------------*/
 /*--------Nav bar---------------------*/
 /*------------------------------------*/
@@ -153,7 +190,7 @@ body {
     background-attachment: fixed;
 }*/
 header {
-    background-color: linear-gradient(180deg, #d5d9dbbe 0%, #32404da4 100%);
+    background-color: linear-gradient(180deg, #d5d9dbbe 0%, #32404d 100%);
 }
 
 .hero {
@@ -242,6 +279,7 @@ header {
     background: #E9E3E3;
     border-radius: 50%;
     cursor: pointer;
+    transition: .2s;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -279,7 +317,15 @@ header {
         height: 0rem;
     }
 
-    50%
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    100% {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
 }
 
 @media screen and (max-width: 950px){
