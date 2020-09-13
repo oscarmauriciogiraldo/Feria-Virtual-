@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing-page</title>
+    <meta name="description" content="landing-page-feria-virtual-latina">
+    <title>Feria Virtual</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
     <link rel="shortcut icon" href="assets/img/LOGO-FERIA_VIRTUAL.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!--<link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>-->
 
 </head>
+
 <body>
     
     <!--**********************************************-->
@@ -169,7 +172,7 @@
         <!-- ************************************************** -->
         <!--Seccion de video de informacion Feria virtual -->
         <!-- ************************************************** -->
-        <section class="row mt-5 mt-md-0">
+        <section class="row mt-5 mt-md-0 justify-content-center">
             <h3 class="h3 text-center">titulo seccion video </h3>
             <div class="row mt-5">
                 <div class="col-lg-6">
@@ -185,9 +188,8 @@
                     <!-- Button trigger modal -->
                     <!--**********************************************************************************************-->
                     <a href="" class="btn btn-indigo btn-md" data-toggle="modal" data-target="#exampleModal">view more</a>
-                </div>
-                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -207,14 +209,17 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <!--**********************************************************************************************-->
+                    <!-- Button trigger modal -->
+                    <!--**********************************************************************************************-->
                 </div>
-                <!--**********************************************************************************************-->
-                <!-- Button trigger modal -->
-                <!--**********************************************************************************************-->
+                 
 
                 <div class="col-lg-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/gDyjzFwrW5o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gDyjzFwrW5o" allowfullscreen></iframe>
                       </div>
                 </div>
             </div>
@@ -276,24 +281,26 @@
                         </b>
                     </h3>
                     <hr>
+                    <!--Formulario -->
                     <form action="">
                         <div class="md-form">
                             <i class="fas fa-user prefix indigo-text"></i>
                             <input type="text" id="nombre" class="form-control">
-                            <label for="nombre">Nombre</label>
+                            <label for="nombre">Nombre:</label>
                         </div>
 
                         <div class="md-form">
-                            <i class="fas fa-user prefix indigo-text"></i>
+                            <i class="fas fa-envelope prefix indigo-text"></i>
                             <input type="email" id="email" class="form-control">
                             <label for="email">E-mail:</label>
                         </div>
 
                         <div class="md-form">
-                            <i class="fas fa-user prefix indigo-text"></i>
-                            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                            <label for="mensaje">E-mail:</label>
+                            <i class="fas fa-envelope prefix indigo-text"></i>
+                            <textarea  id="" class="form-control"></textarea>
+                            <label for="texto">Ingresa tu comentario:</label>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -319,6 +326,16 @@
     </footer> 
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+
+    <script src="https://kit.fontawesome.com/040cb15783.js" crossorigin="anonymous"></script>
+
     <script src="assets/js/main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
