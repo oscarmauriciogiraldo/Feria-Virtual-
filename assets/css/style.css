@@ -144,11 +144,6 @@ body {
 
 
 
-/*.fondo-header {
-    /*background: rgba(40, 48, 72, 0.8);*
-    background: linear-gradient(180deg, #d5d9dbbe 0%, #32404da4 100%);
-    min-height: 100vh;
-}*/
 
 /* nav aqui antes 
 
@@ -159,52 +154,39 @@ body {
     width: 100%;
     position: fixed;
     height: 60px;
-    /*background-color: #212F3D;
-    background: #283048;   */ 
+    
    background: #fcfcfc;  
 }
 
 .nav2 .logo-m-a img{
     width: 100px;
     height: 60px;
-    /*
-    display: none;
-    background-image: url(../img/logo2.png);*/
 }
 
 /* -----------------------------*/
 /* -------Header 2 o menu2------*/
 /* -----------------------------*/
 
-/*.hero {
-    width: 100%;
-    /*height: 100vh;*
-    min-height: calc(100vh - 110px);
-    background-image: url(../img/banner.jpg);
 
-    font-family: 'Roboto', sans-serif;
-
-    background-position: center;
-    background-size: cover;
-
-    background-attachment: fixed;
-}*/
 header {
     background-color: linear-gradient(180deg, #d5d9dbbe 0%, #32404d 100%);
 }
 
 .hero {
     width: 100%;
+    display: flex;
     /*height: 100vh;
     min-height: 100vh;*/
     height: 100vh;
-    background-image: url(../img/banner-feria-virtual.jpg);
+    background-image:  url(../img/banner-feria-virtual.jpg);
 
     font-family: 'Roboto', sans-serif;
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    
 
     /*background-attachment: fixed;*/
 }
