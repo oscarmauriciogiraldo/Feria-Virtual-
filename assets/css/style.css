@@ -3,6 +3,7 @@
 :root {
     /* colores */
     --gris-header: #C9CFD1;
+    --gris-sections:#8f9394;
     --gris-body:#FDFEFE;
     --blue-button1:#02264D;
     --blue-button2:#264668;
@@ -25,6 +26,34 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.container section a {
+    display: inline-block;
+    line-height: normal;
+    color: #fff;
+    background: linear-gradient(180deg, var(--blue-button1) 0%, var(--blue-button2) 100%);
+    text-decoration: none;
+    /*font-weight: 500;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.container section a:hover {
+    color: #fff ;
+    background: linear-gradient(180deg, var(--red-button2) 0%, var(--red-button1) 100%);
+    text-decoration: none;
+    
+}
+
+
 
 .container {
     width: 95%;
@@ -156,6 +185,7 @@ body {
     height: 60px;
     
    background: #fcfcfc;  
+   z-index: 999;
 }
 
 .nav2 .logo-m-a img{
@@ -245,6 +275,34 @@ header {
     display: inline-block;
 }
 */
+
+/* -------------------------------------------- */
+/* --------------Nosotros---------------------- */
+/* -------------------------------------------- */
+/*.nosotros{
+    margin-bottom: 60px;
+}*/
+
+main.nosotros .subtitulo-nosotros {
+    font-size: 20px;
+    color: var(--blue-1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+main.nosotros .subtitulo-nosotros span {
+    background-color: var(--gris-sections);
+    padding: 0 15px;
+    z-index: 9;
+    position: relative;
+}
+
+/* -------------------------------------------- */
+/* --------------Nosotros---------------------- */
+/* -------------------------------------------- */
 
 .go-top-container {
     position: fixed;
