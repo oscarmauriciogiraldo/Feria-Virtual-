@@ -7,6 +7,8 @@
     --gris-body:#FDFEFE;
     --blue-button1:#02264D;
     --blue-button2:#264668;
+    --blue-bra-nav: rgba(2, 38, 77, 0.5);
+    --blue-bra-nav2: rgba(38, 70, 104, 0.5);
     --red-button1:#F91E3E;
     --red-button2:#9c1428;
     --blue-1:#02121f;
@@ -55,14 +57,14 @@ body {
 
 
 
-.container {
+/*.container {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     padding: 100px 0;
     height: auto;
-}
+}*/
 
 /*------------------------------------*/
 /*--------Nav bar---------------------*/
@@ -72,7 +74,8 @@ body {
     padding: 3px;
     color: #fff;
     height: 110px;
-    background: #fcfcfc;
+    /*background: #fcfcfc;*/
+    background: linear-gradient(180deg, var(--blue-button1) 0%, var(--blue-button2) 100%);
     /*background: linear-gradient(180deg, #a6abad25, #C9CFD125 100%);*/
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: var(--shadow) var(--color_shadow);
@@ -101,7 +104,8 @@ body {
 .link {
     display: inline-block;
     line-height: normal;
-    color: #02121f;
+    /*color: #02121f;*/
+    color: #fff;
     
     text-decoration: none;
     /*font-weight: 500;*/
@@ -121,8 +125,11 @@ body {
 .cta-link {
     display: inline-block;
     line-height: normal;
-    color: #fff;
-    background: linear-gradient(180deg, var(--blue-button1) 0%, var(--blue-button2) 100%);
+    /*color: #fff;
+    background: linear-gradient(180deg, var(--blue-button1) 0%, var(--blue-button2) 100%);*/
+    color: var(--blue-1);
+    /*background: linear-gradient(180deg, var(--gris-header) 0%, var(--gris-sections) 100%);*/
+    background: var(--gris-header);
     text-decoration: none;
     /*font-weight: 500;*/
     font-family: 'Roboto', sans-serif;
@@ -162,8 +169,8 @@ body {
 
 .nav__header .links-menu a.cta-link:hover{
     /*background: #17202A;*/
-    color: #fff ;
-    background: linear-gradient(180deg, var(--red-button2) 0%, var(--red-button1) 100%);
+    color: var(--blue-1);
+    background: linear-gradient(180deg, var(--gris-header) 0%, var(--gris-sections) 100%);
     text-decoration: none;
     
 }
@@ -184,8 +191,10 @@ body {
     position: fixed;
     height: 60px;
     
-   background: #fcfcfc;  
-   z-index: 999;
+    /*background: #fcfcfc; */
+    background: linear-gradient(180deg, var(--blue-bra-nav) 0%, var(--blue-bra-nav2) 100%);
+
+    z-index: 999;
 }
 
 .nav2 .logo-m-a img{
